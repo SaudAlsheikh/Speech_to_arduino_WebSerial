@@ -41,6 +41,40 @@ recognition.addEventListener("result", (e) => {
             console.log("opening google");
             window.open("https://www.google.com/");
         }
+
+        if (text.includes('left')) {
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'going left';
+            texts.appendChild(p)
+          }
+      
+          if (text.includes('go ahead')) {
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'going ahead';
+            texts.appendChild(p)
+          }
+          if (text.includes('go back')) {
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'going backward';
+            texts.appendChild(p)
+          }
+      
+          if (text.includes('stop')) {
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'stoping';
+            texts.appendChild(p)
+          }
+      
+          if (text.includes('right')) {
+            p = document.createElement('p');
+            p.classList.add('replay');
+            p.innerText = 'going right';
+            texts.appendChild(p)
+          }
         p = document.createElement("p");
     }
 });
